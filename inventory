@@ -1,7 +1,12 @@
-target1 ansible_host=192.168.62.130 ansible_connection=ssh ansible_user=vm-ubuntu ansible_ssh_private_key_file=~/.ssh/ansible-target1 
+workers_node01 ansible_host=192.168.62.130 ansible_connection=ssh ansible_user=vm-ubuntu ansible_ssh_private_key_file=~/.ssh/ansible-target1 
 
-target2 ansible_host=192.168.62.131 ansible_connection=ssh ansible_user=vm-ubuntu ansible_ssh_private_key_file=~/.ssh/ansible-target2 
+workers_node02 ansible_host=192.168.62.131 ansible_connection=ssh ansible_user=vm-ubuntu ansible_ssh_private_key_file=~/.ssh/ansible-target2 
 
-[targets]
-target1
-target2
+master_node01 ansible_host=192.168.62.132 ansible_connection=ssh ansible_user=vm-ubuntu ansible_ssh_private_key_file=~/.ssh/ansible-target3 
+
+[kubernetes_masters]
+master_node01
+
+[kubernetes_workers]
+workers_node01
+workers_node02
