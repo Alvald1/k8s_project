@@ -1,5 +1,0 @@
-- name: Example from an Ansible Playbook
-  hosts: target1
-  tasks:
-    - name: Test
-      ansible.builtin.ping:

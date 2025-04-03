@@ -1,2 +1,3 @@
 ---
-# tasks file for conf-cluster
+- name: Import task kubernetes_repo.yml
+  import_tasks: kubernetes_repo.yml 

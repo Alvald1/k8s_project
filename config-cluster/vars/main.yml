@@ -1,2 +1,3 @@
 ---
-# vars file for conf-cluster
+kubernetes_url_key: "https://packages.cloud.google.com/apt/doc/apt-key.gpg"
+kubernetes_url_repo: "deb https://apt.kubernetes.io/ kubernetes-jammy main"
